@@ -1,0 +1,63 @@
+/**
+  Title: harper-favorites.css
+  Author: James Harper
+  Date: 3/30/2023
+  Description: Web 231 - Week 3 - Assignment 3.2
+*/
+
+/**
+  Sets the body font of the html document. font-family lists the fonts for the document in order of availability.
+*/
+* {
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+}
+/**
+Styles the main heading with font thickness and alignment.
+*/
+h1 {
+  font-weight: 400;
+  text-align: center;
+}
+/**
+Adjusts the width, height, and margin of the card class.
+*/
+.card {
+  width: 650px;
+  height: 440px;
+  margin: auto;
+}
+/**
+Assigns the card-content class display to flex, arranges all elements within the container in a column, puts a 40px gap between rows,
+aligns items to the center of the parent container.
+*/
+.card-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 40px;
+  align-items: center;
+}
+/**
+Styles all buttons with the class btn. Background color to provided hex code, text color white, width to 90%
+of the parent container.
+*/
+.btn-primary {
+  background-color: #4F3674;
+  color: #fff;
+  width: 90%;
+  border: none;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 15px 32px;
+}
+/**
+Style for the division container for the return anchor. Sets display to flex, max-width to match the size of
+the card container, margin to auto, and padding around the element to 5px.
+*/
+#link-container {
+  display: flex;
+  max-width: 650px;
+  margin: auto;
+  padding: 5px;
+}

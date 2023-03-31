@@ -1,0 +1,56 @@
+<!-- Establishes the type of document -->
+<!DOCTYPE html>
+<!-- Sets the document type as HTML in english -->
+<html lang="en">
+<!--
+  Title: harper-favorites.html
+  Author: James Harper
+  Date: 3/30/2023
+  Description: Web 231 - Week 3 - Assignment 3.2
+-->
+<!-- Defines the metadata information such as document title, character set, styles, scripts,
+  and other meta information.
+-->
+  <head>
+    <!-- Defines the title of the document -->
+    <title>WEB 231 - Enterprise Javascript I: Exercise 3.2</title>
+    <!-- Links the stylesheet to the HTML document -->
+    <link rel="stylesheet" href="harper-favorites.css" type="text/css">
+    <link rel="stylesheet" href="global.css" type="text/css">
+    <!-- The link acquires the Roboto font from Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  </head>
+  <!-- Establishes the body of the HTML document. This is where all of the visual and user interaction lies. -->
+  <body>
+    <!-- Container division for the markup. -->
+    <div id="container">
+      <!-- Main header for the document. -->
+      <h1>Welcome to the Favorites App!</h1>
+      <!-- Creates a new division as a card. -->
+      <div class="card">
+        <!-- Second heading for the card title. -->
+        <h2 class="card-title">My Favorites</h2>
+        <!-- Items within the card container. -->
+        <div class="card-content">
+          <!-- Clickable buttons with a shared class and unique ids. The onclick part assigns the respective
+            function to the button.
+          -->
+          <button class="btn-primary" onclick="team()">Favorite Sports Team</button>
+          <button class="btn-primary" onclick="book()">Favorite Book</button>
+          <button class="btn-primary" onclick="author()">Favorite Author</button>
+          <button class="btn-primary" onclick="progLang()">Favorite Programming Language</button>
+        </div>
+      </div>
+      <!-- Clickable link to return home. The link is within its own division container. -->
+      <div id="link-container">
+        <a href="" class="return-home">Return</a>
+      </div>
+    </div>
+    <!-- Links harper-favorites.js to harper-favorites.html. -->
+    <script src="harper-favorites.js"></script>
+
+  </body>
+
+</html>
